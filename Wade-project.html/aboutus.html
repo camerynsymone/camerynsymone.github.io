@@ -1,27 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<style>
+		#embedded-h2-aboutus {
+			text-align: center;
+			font-size: 30px;
+			color: darkred;
+			text-decoration: underline;
+		}
+		#embedded-title		{
+			text-align: center;
+			font-size: 40px;
+			color: darkred;
+			background-color: lightgrey;
+		}
+		#external-nav-table	{
+			margin: 0 auto;
+			border-collapse: collapse;
+			width: 100%;
+			background-color: lightgrey;
+		}
+		#image	{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 40%;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<title>About Us</title>
 	<meta name="author" content="Cameryn Wade">
 </head>
 <body>
+
 	<header>
-		<nav>
-			<br><br>Page Navigation
-			<ul>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="register.html">Register</a></li>
-				<li><a href="candidates.html">Candidates</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
+		<h1 id="embedded-title">About Us</h1>
+			<table id="external-nav-table">
+				<tr>
+					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
+					<td class="external-nav-td"><a href="aboutus.html">About Us</a></td>
+					<td class="external-nav-td"><a href="candidates.html" class="external-nav-a">Candidates</a></td>
+					<td class="external-nav-td"><a href="contact.html" class="external-nav-a">Contact</a></td>
+					<td class="external-nav-td"><a href="register.html" class="external-nav-a">Register</a></td>
+				</tr>
+			</table>
 	</header>
 	<main>
 		<section>
-			<h1> About Us </h1>
+			<h1 id="embedded-h2-aboutus">Purpose Statement </h1>
 			<p>This website is dedicated to encouraging and assisting voter's living primarily in the Eastern Arkansas Region, within the Saint Francis County area to Cross County area. Here, you can find more information regarding the candidates, how to register to vote as well as where you can vote. Feel free to click on the links above so we can help you with your specified needs!</p>
 			<p> We hope to be able to assist you with the most current and up to date information regarding the 2024 Presidential Election! Feel free to use our Contact page to be able to call or email your local offices directly for more information.</p>
+		</section>
+		<section>
+			<h2 id="embedded-h2-aboutus">Meet the Author</h2>
+			<p>This page was curated by Cameryn Wade, an Information Technology student at North Carolina A&T University as a project for class.</p>
+		</section>
+		<img src="images/aboutus.jpg" alt="NCAT logo" id="image">
+		<section>
+			<h2 id="embedded-h2-aboutus">Messasge From the Author</h2>
+			<p>Thank you for visiting my website. I hope I was able to cover all needs pertaining to voting within the Cross and St. Francis counties! Go Aggies!</p>
 		</section>
 	</main>
 	<footer>
@@ -29,4 +66,6 @@
 		<br>
 		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
 	</footer>
+</body>
+</html>
 

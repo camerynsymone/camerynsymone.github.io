@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<style>
+		#embedded-h2-contact	{
+			text-align: center;
+			font-size: 38px;
+			color: darkred;
+			background-color: lightgrey;
+		}
+		#embedded-contact 	{
+			text-align: center;
+			font-size: 30px;
+			color: darkred;
+			text-decoration: underline;
+		}
+		#image	{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			width: 25%;
+		}
+		#external-nav-table	{
+			margin: 0 auto;
+			border-collapse: collapse;
+			width: 100%;
+			background-color: lightgrey;
+		}
+	</style>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Your Local Offices</title>
 </head>
 <body>
 	<header>
-		<h1>Contact Your Local Offices</h1>
+		<h1 id="embedded-h2-contact">Contact Your Local Offices</h1>
 		<nav>
-			<br><br>Page Navigation
-			<ul>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="register.html">Register</a></li>
-				<li><a href="candidates.html">Candidates</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<table id="external-nav-table">
+				<tr>
+					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
+					<td class="external-nav-td"><a href="aboutus.html" class="external-nav-a">About Us</a></td>
+					<td class="external-nav-td"><a href="candidates.html" class="external-nav-a">Candidates</a></td>
+					<td class="external-nav-td"><a href="contact.html" class="external-nav-a">Contact</a></td>
+					<td class="external-nav-td"><a href="register.html" class="external-nav-a">Register</a></td>
+				</tr>
+			</table>
 		</nav>
 	</header>
-</body>
-<main>
-	
-</main>
-<footer>
+	<main>
+		<img src="images/contact.jpg" alt="Voter Cartoon" id="image">
+		<h2 id="embedded-contact">Need Assistance?</h2>
+		<p>If you have any questions not answered on this website, feel free to reach out to your local offices regarding any uncertainty.</p>
+		<p>Cross County Residents can find assistance at the Cross County Clerk's Office located at <br> 705 E Union Ave # 8, Wynne, AR 72396<br> Or by telephone at (870) 238-5735. To be directed to their website, feel free to <a href="https://www.crosscountyar.org/">click here!</a></p>
+		<br>
+		<p>St. Francis County Residents can find assistance at the St. Francis County Clerk's Office located at <br> 313 S Izard St #2, Forrest City, AR 72335 <br> or by telephone at (870) 261-1725. To be directed to their website, feel free to <a href="https://countyservices.azurewebsites.net/Home/County/143"> click here!</a></p>
+	</main>
+	<footer>
 		<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> 
 		<br>
 		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
-</footer>
+	</footer>
+</body>
+</html>

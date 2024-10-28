@@ -1,32 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<style>
+		#embedded-h2-homepage {
+			text-align: center;
+			font-size: 38px;
+			color: darkred;
+			text-decoration: underline;
+		}
+		#embedded-h3	{
+			text-align: center;
+			font-size: 38px;
+			color: darkred;
+			text-decoration: underline;
+		}
+	</style>
 	<meta charset="UTF-8">
 	<title>Eastern Arkansas Voter's Guide 2024</title>
 	<meta name="author" content="Cameryn Wade">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
-<body>
+<body class="external-style-body">
+
 	<header>
-		<h1>Eastern Arkansas Voter's Guide</h1>
+		<h1 class="title">Eastern Arkansas Voter's Guide</h1>
 		<nav>
-			<br><br>Page Navigation
-			<ul>
-				<li><a href="aboutus.html">About Us</a></li>
-				<li><a href="register.html">Register</a></li>
-				<li><a href="candidates.html">Candidates</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<table class="external-nav-table">
+				<tr>
+					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
+					<td class="external-nav-td"><a href="aboutus.html" class="external-nav-a">About Us</a></td>
+					<td class="external-nav-td"><a href="candidates.html" class="external-nav-a">Candidates</a></td>
+					<td class="external-nav-td"><a href="contact.html" class="external-nav-a">Contact</a></td>
+					<td class="external-nav-td"><a href="register.html" class="external-nav-a">Register</a></td>
+				</tr>
+			</table>
 		</nav>
 	</header>
+	<br>
 
 	<main>
+		<img src="images/mainvoteimage.jpg" alt="Voting" class="center">
 		<section>
-			<h2 >Home Page</h2>
-			<img src="" alt="" width="" height="">
+			<h2 id="embedded-h2-homepage">Home Page</h2>
 			<p>This website is dedicated to encouraging and assisting voter's living primarily in the Eastern Arkansas Region, within the Saint Francis County area to Cross County area. Here, you can find more information regarding the candidates, how to register to vote as well as where you can vote. Feel free to click on the links above so we can help you with your specified needs!
 			</p>
+		</section>
+		<section>
+			<h3 id="embedded-h3">Why Vote?</h3>
+			<p>The United States of America was built on democracy, meaning ballots and votes have been used in every election since our founding. As often as it is said, the truth is, every vote counts. As American citizens it is very important that we exercise our consistitutional right to vote in presidential elections as well as the elections related to our demographics such as judges and local council members.</p>
 		</section>
 	</main>
 	<footer>
@@ -34,3 +55,5 @@
 		<br>
 		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
 	</footer>
+</body>
+</html>

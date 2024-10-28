@@ -1,0 +1,32 @@
+.external-style-body		{
+	background-color: whitesmoke;
+}
+.external-h1	{
+	text-align: center;
+	color: whitesmoke;
+}
+.external-nav-table	{
+	margin: 0 auto;
+	border-collapse: collapse;
+	width: 100%;
+	background-color: darkred;
+}
+.external-nav-td	{
+	padding: 5px;
+}
+.external-nav-a {
+	color:	beige;
+	font-size: 20px;
+
+}
+.title	{
+	text-align: center;
+	font-size: 45px;
+	color:	black;
+}
+.center	{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
