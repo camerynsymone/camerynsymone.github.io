@@ -30,7 +30,7 @@
 
 /* Navigation Links Hover Effect */
 .external-nav-a:hover {
-    color: white; /* Brighten the text color on hover */
+    color: black; /* Darken the text color on hover */
 }
 
 /* Header Title */
@@ -64,10 +64,18 @@
     text-decoration: underline;
 }
 
-/* Footer Spacing /*
+/* Footer Base Styling /*
 footer {
     padding: 10px;
     text-align: center;
+}
+
+/* Footer Links Container */
+.footer-links {
+    text-align: center; /* Center the content */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the links horizontally */
+    gap: 10px; /* Add spacing between links */
 }
 
 /* Footer Links */
