@@ -61,10 +61,10 @@
     position: relative; /* Position relative to avoid parent container constraints */
     left: 0; /* Align to the left edge of the screen */
 }
-
-/* Main Content Styling */
-main {
-    max-width: 1200px; /* Limit the content width */
+main, section {
+    width: 100%; /* Ensure parent containers span the full width */
+    max-width: none; /* Prevent any maximum width restrictions */
+    margin: 0; /* Remove default margins */
     margin: 0 auto; /* Center main content */
     padding: 20px; /* Add padding for spacing */
     text-align: left; /* Align text content to the left */
