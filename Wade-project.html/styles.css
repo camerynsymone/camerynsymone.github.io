@@ -65,6 +65,12 @@
 	width: 25%; /* New class for small images */
 }
 
+/* Center Paragraph Text */
+p {
+    text-align: center;
+    margin: 0 auto; /* Ensure proper alignment if there are width restrictions */
+}
+
 /* Footer Base Styling */
 footer {
 	padding: 10px;
