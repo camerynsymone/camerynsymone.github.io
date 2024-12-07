@@ -1,39 +1,44 @@
 /* Body styling */
 .external-style-body {
-	background-color: whitesmoke;
-	margin: 0; /* Remove default body margin */
-	padding: 0; /* Remove default body padding */
+    background-color: whitesmoke;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+    font-family: Arial, sans-serif; /* Set a default font family */
 }
 
 /* Shared Header Title */
 .title {
-	text-align: center;
-	font-size: 45px;
-	color: black;
+    text-align: center;
+    font-size: 45px;
+    color: black;
+    margin: 20px 0; /* Add some spacing around the title */
 }
 
 /* Navigation Table */
 .external-nav-table {
-	margin: 0 auto;
-	border-collapse: collapse;
-	width: 100%; /* Ensure the navigation spans the full width */
-	background-color: darkred;
+    margin: 0 auto; /* Center the navigation bar */
+    border-collapse: collapse;
+    width: 100%; /* Make the navigation span the full width */
+    background-color: darkred;
 }
 
 .external-nav-td {
-	padding: 5px;
-	text-align: center; /* Center-align navigation links */
+    padding: 10px; /* Add spacing inside table cells */
+    text-align: center; /* Center-align the text in each cell */
+    vertical-align: middle; /* Vertically center-align text */
 }
 
 .external-nav-a {
-	color: beige;
-	font-size: 20px;
-	text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow for padding and clickable areas */
+    padding: 5px 10px; /* Add padding for a clickable area */
 }
 
 .external-nav-a:hover {
-	color: black; /* Change text color on hover */
-	text-decoration: underline; /* Add underline on hover */
+    color: black; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Section Titles - Full-Screen Grey Background */
@@ -43,14 +48,14 @@
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-    text-align: center; /* Center the text */
+    text-align: center; /* Center-align the text */
     font-size: 38px; /* Set the font size */
     color: darkred; /* Set the text color */
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
     padding: 10px 0; /* Add padding for spacing */
     margin: 0; /* Remove default margin */
-    width: 100vw; /* Make the grey background span the full viewport width */
+    width: 100vw; /* Ensure the grey background spans the full screen */
     position: relative; /* Ensure proper positioning */
     left: 0; /* Align to the left edge of the viewport */
     box-sizing: border-box; /* Include padding in the element's width */
@@ -67,14 +72,7 @@
     max-width: 1200px; /* Allow text to occupy up to 1200px */
     width: 90%; /* Ensure the text block adapts responsively */
     margin: 0 auto; /* Center the text block horizontally */
-    text-align: center; /* Center-align the text */
-}
-
-/* Ensure Parent Containers Don’t Restrict Width */
-main, section {
-    width: 100%; /* Ensure the container spans the full width */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+    text-align: center; /* Center-align the text inside */
 }
 
 /* Global Image Styling */
@@ -111,7 +109,7 @@ main p {
     margin: 20px auto; /* Center the paragraph block horizontally */
     width: 90%; /* Allow the text to spread wider */
     max-width: 1200px; /* Set a maximum width for readability */
-    line-height: 1.6; /* Improve readability */
+    line-height: 1.8; /* Improve readability */
 }
 
 /* Align Sections with Left-Aligned Content */
