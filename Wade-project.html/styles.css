@@ -50,19 +50,23 @@
 
 /* Global Image Styling */
 img {
-    display: block; /* Treat all images as block elements */
+    display: block; /* Treat images as block elements */
     margin: 20px auto; /* Center images horizontally */
     width: auto; /* Allow the image to scale naturally */
-    max-width: 100%; /* Prevent images from exceeding their container */
+    max-width: 100%; /* Ensure images don’t exceed the container's width */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Strict Constraints for Candidate Images in <main> */
+/* Specific Styling for Images in <main> */
 main img {
-    max-width: 300px; /* Restrict image width to 300px */
-    max-height: 300px; /* Restrict image height to 300px */
-    width: auto; /* Allow images to scale naturally */
-    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images are block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 300px !important; /* Force the maximum width to 300px */
+    max-height: 300px !important; /* Force the maximum height to 300px */
+    width: auto !important; /* Allow images to resize proportionally */
+    height: auto !important; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the box */
+    box-sizing: border-box; /* Include padding/borders in size calculations */
 }
 
 /* Constrain Parent Container */
