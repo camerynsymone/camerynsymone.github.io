@@ -103,21 +103,13 @@ main {
 	margin: 0 auto; /* Center the main content horizontally */
 }
 
-/* Align Paragraphs Left but Center the Block Horizontally */
-main p {
-	text-align: left; /* Align text to the left */
-	margin: 20px auto; /* Center the paragraph block horizontally */
-	width: 70%; /* Set width relative to the parent container */
-	max-width: 800px; /* Limit the maximum width for readability */
-	line-height: 1.6; /* Improve readability */
-}
-
-/* Align Sections with Left-Aligned Content */
+main p,
 main section {
-	margin: 20px auto; /* Center the section block horizontally */
-	width: 70%; /* Set width relative to the parent container */
-	max-width: 800px; /* Limit the maximum width for readability */
-	text-align: left; /* Align text inside the section to the left */
+    text-align: left; /* Align text to the left */
+    margin: 20px auto; /* Center the content horizontally */
+    width: 90%; /* Occupy 90% of the viewport width */
+    max-width: 1200px; /* Set a maximum width for readability */
+    line-height: 1.6; /* Improve readability */
 }
 
 /* Bullet Point Styling */
