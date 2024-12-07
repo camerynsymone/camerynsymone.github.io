@@ -1,10 +1,13 @@
-/* Reset Default Styles */
-html, body {
+/* Reset Default Browser Styles */
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and borders in element dimensions */
-    overflow-x: hidden; /* Prevent horizontal scrollbars */
-    background-color: whitesmoke; /* Background for the entire page */
+    box-sizing: border-box;
+}
+
+/* Body styling */
+.external-style-body {
+    background-color: whitesmoke;
     font-family: Arial, sans-serif; /* Set a default font */
 }
 
@@ -55,17 +58,17 @@ html, body {
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
     padding: 15px 0; /* Add vertical spacing */
-    margin: 0; /* Remove default margin */
-    width: 100%; /* Ensure the element spans the full container width */
-    box-sizing: border-box; /* Include padding in the element's width */
+    margin: 0 auto; /* Center the title block */
+    width: 100%; /* Make the grey background span the full width */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
-main, section {
-    width: 100%; /* Ensure parent containers span the full width */
-    max-width: none; /* Prevent any maximum width restrictions */
-    margin: 0; /* Remove default margins */
-    padding: 0; /* Remove default padding */
+main {
+    max-width: 1200px; /* Allow main content to spread wider */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 20px; /* Add padding for readability */
+    text-align: left; /* Ensure all main content text is left-aligned */
 }
 
 /* Paragraph Styling */
