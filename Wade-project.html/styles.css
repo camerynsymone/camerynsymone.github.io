@@ -62,6 +62,31 @@
     left: 0; /* Align to the left edge of the screen */
 }
 
+/* Global Image Styling */
+img {
+    display: block; /* Treat images as block elements */
+    margin: 20px auto; /* Center all images horizontally */
+    max-width: 100%; /* Prevent images from exceeding their container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Candidate Images in Main */
+main img {
+    display: block; /* Ensure images are block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 300px; /* Restrict maximum width to 300px */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within constraints */
+}
+
+/* Specific Constraints for Problematic Images */
+#image, #image2 {
+    max-width: 300px; /* Set the maximum width for specific images */
+    max-height: 300px; /* Set the maximum height */
+    width: auto; /* Ensure proportional resizing */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Fit the image within the specified dimensions */
+}
 /* Main Content Styling */
 main {
     max-width: 1200px; /* Limit the content width */
