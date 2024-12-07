@@ -50,21 +50,22 @@
 
 /* Global Image Styling */
 img {
-    display: block; /* Treat all images as block elements */
-    margin: 20px auto; /* Center all images horizontally with spacing */
-    max-width: 100%; /* Prevent images from exceeding the width of their container */
+    display: block; /* Ensure images are block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 100%; /* Prevent images from exceeding container width */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Specific Candidate Images on Candidates Page */
+/* Strict Constraints for All Images in <main> */
 main img {
-    display: block; /* Center the image as a block element */
-    margin: 20px auto; /* Center the image horizontally */
-    max-width: 300px; /* Restrict maximum width */
-    max-height: 300px; /* Restrict maximum height */
-    width: auto; /* Allow images to resize proportionally */
+    display: block; /* Treat images as block elements */
+    margin: 20px auto; /* Center images horizontally */
+    width: 300px; /* Enforce a specific width */
+    max-width: 300px; /* Prevent images from exceeding 300px width */
     height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within the constraints */
+    max-height: 300px; /* Enforce a maximum height */
+    object-fit: contain; /* Ensure images fit within the specified dimensions */
+    box-sizing: border-box; /* Include padding and borders in size calculations */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
