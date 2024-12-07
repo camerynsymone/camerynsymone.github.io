@@ -1,3 +1,10 @@
+/* Reset Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in dimensions */
+}
+
 /* Body Styling */
 .external-style-body {
     background-color: whitesmoke;
@@ -39,7 +46,7 @@
     text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Titles */
+/* Section Titles - Ensure Full-Screen Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
@@ -51,9 +58,11 @@
     color: darkred; /* Set the text color */
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
-    padding: 0px 0; /* Add vertical spacing */
+    padding: 15px 0; /* Add vertical spacing */
     margin: 0; /* Remove default margin */
-    width: 100%; /* Ensure the element spans the full width */
+    width: 100vw; /* Force the grey background to span the entire viewport width */
+    position: relative; /* Allow it to be positioned relative to the viewport */
+    left: 0; /* Align the background to the left of the screen */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
@@ -72,9 +81,9 @@ main p {
     line-height: 1.8; /* Improve readability */
 }
 
-/* General Global Image Styling */
+/* Global Image Styling */
 img {
-    display: block; /* Center-align all images */
+    display: block; /* Treat images as block elements */
     margin: 20px auto; /* Center images horizontally */
     max-width: 100%; /* Prevent images from exceeding their container */
     height: auto; /* Maintain aspect ratio */
