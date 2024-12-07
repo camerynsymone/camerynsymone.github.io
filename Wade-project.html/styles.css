@@ -80,21 +80,21 @@ main p {
     line-height: 1.8; /* Improve readability */
 }
 
-/* Image Styling */
+/* General Global Image Styling */
 img {
-    display: block; /* Treat images as block elements */
+    display: block; /* Center-align all images */
     margin: 20px auto; /* Center images horizontally */
     max-width: 100%; /* Prevent images from exceeding their container */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Strict Constraints for Candidate Images in <main> */
+/* Restrict Images Specifically in <main> */
 main img {
-    display: block; /* Ensure images are block elements */
-    margin: 20px auto; /* Center images horizontally */
-    max-width: 300px; /* Restrict maximum width to 300px */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within constraints */
+    max-width: 300px; /* Constrain maximum width */
+    max-height: 300px; /* Constrain maximum height */
+    width: auto; /* Scale width proportionally */
+    height: auto; /* Scale height proportionally */
+    object-fit: contain; /* Ensure images fit within constraints */
 }
 
 /* Bullet Point Styling */
