@@ -1,32 +1,83 @@
-.external-style-body		{
+/* Body styling */
+.external-style-body {
 	background-color: whitesmoke;
 }
-.external-h1	{
+
+/* Header Title */
+.external-h1 {
 	text-align: center;
 	color: whitesmoke;
 }
-.external-nav-table	{
+
+/* Navigation Table */
+.external-nav-table {
 	margin: 0 auto;
 	border-collapse: collapse;
 	width: 100%;
 	background-color: darkred;
 }
-.external-nav-td	{
+
+/* Navigation Table Cells */
+.external-nav-td {
 	padding: 5px;
 }
+
+/* Navigation Links */
 .external-nav-a {
 	color:	beige;
 	font-size: 20px;
-
 }
+
+/* Navigation Links Hover Effect */
+.external-nav-a:hover {
+    color: white; /* Brighten the text color on hover */
+}
+
+/* Header Title */
 .title	{
 	text-align: center;
 	font-size: 45px;
 	color:	black;
 }
+
+/* Center Images */
 .center	{
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+}
+
+/* Style for the h2 element on the homepage */
+#embedded-h2-homepage {
+    text-align: center;
+    font-size: 38px;
+    color: darkred;
+    text-decoration: underline;
+}
+
+/* Style for the h3 element */
+#embedded-h3 {
+    text-align: center;
+    font-size: 38px;
+    color: darkred;
+    text-decoration: underline;
+}
+
+/* Footer Spacing /*
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Footer Links */
+footer a {
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+/* Footer Links Hover Effect */
+footer a:hover {
+    color: black; /* Change color on hover */
 }
