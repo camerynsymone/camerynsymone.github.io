@@ -35,7 +35,7 @@
 	text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Titles - Grey Background Across Screen */
+/* Section Titles - Full-Screen Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
@@ -49,13 +49,13 @@
     background-color: lightgrey; /* Set the grey background */
     padding: 10px 0; /* Add padding for spacing */
     margin: 0; /* Remove default margin */
-    width: 100vw; /* Ensure the element spans the full viewport width */
+    width: 100vw; /* Make the grey background span the full viewport width */
     position: relative; /* Ensure proper positioning */
     left: 0; /* Align to the left edge of the viewport */
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
-/* Constrain Text Inside the Section Titles */
+/* Center and Constrain Text Inside Section Titles */
 #embedded-h2-homepage span,
 #embedded-h3 span,
 #titleline span,
@@ -63,79 +63,93 @@
 #embedded-h2-contact span,
 #embedded-h1-register span {
     display: inline-block; /* Treat the text as a block-level element */
-    max-width: 1200px; /* Allow text to spread more (adjust as needed) */
-    width: 95%; /* Make the text responsive and almost full-width */
-    margin: 0 auto; /* Center the text block */
-    text-align: center; /* Align the text inside */
+    max-width: 1200px; /* Allow text to occupy up to 1200px */
+    width: 90%; /* Ensure the text block adapts responsively */
+    margin: 0 auto; /* Center the text block horizontally */
+    text-align: center; /* Center the text inside */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
 main, section {
-	width: 100%; /* Ensure the container spans the full width */
-	margin: 0; /* Remove default margins */
-	padding: 0; /* Remove default padding */
+    width: 100%; /* Ensure the container spans the full width */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 /* Global Image Styling */
 img {
-	display: block; /* Treat images as block elements */
-	margin: 20px auto; /* Center images horizontally */
-	width: auto; /* Allow the image to scale naturally */
-	max-width: 100%; /* Prevent images from exceeding the container */
-	height: auto; /* Maintain aspect ratio */
+    display: block; /* Treat images as block elements */
+    margin: 20px auto; /* Center images horizontally */
+    width: auto; /* Allow the image to scale naturally */
+    max-width: 100%; /* Prevent images from exceeding the container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Strict Constraints for Candidate Images in <main> */
 main img {
-	display: block; /* Ensure images are block elements */
-	margin: 20px auto; /* Center images horizontally */
-	max-width: 300px; /* Restrict maximum width to 300px */
-	max-height: 300px; /* Restrict maximum height to 300px */
-	width: auto; /* Allow images to resize proportionally */
-	height: auto; /* Maintain aspect ratio */
-	object-fit: contain; /* Ensure the image fits within constraints */
-	box-sizing: border-box; /* Include padding/borders in size calculations */
+    display: block; /* Ensure images are block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 300px; /* Restrict maximum width to 300px */
+    max-height: 300px; /* Restrict maximum height to 300px */
+    width: auto; /* Allow images to resize proportionally */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within constraints */
+    box-sizing: border-box; /* Include padding/borders in size calculations */
 }
 
-main p,
-main section {
+/* Constrain Main Container */
+main {
+    max-width: 1200px; /* Allow the main container to spread wider */
+    margin: 0 auto; /* Center the main content horizontally */
+}
+
+/* Align Paragraphs Left but Center the Block Horizontally */
+main p {
     text-align: left; /* Align text to the left */
-    margin: 20px auto; /* Center the content horizontally */
-    width: 90%; /* Occupy 90% of the viewport width */
+    margin: 20px auto; /* Center the paragraph block horizontally */
+    width: 90%; /* Allow the text to spread wider */
     max-width: 1200px; /* Set a maximum width for readability */
     line-height: 1.6; /* Improve readability */
 }
 
+/* Align Sections with Left-Aligned Content */
+main section {
+    margin: 20px auto; /* Center the section block horizontally */
+    width: 90%; /* Allow the section to spread wider */
+    max-width: 1200px; /* Limit the maximum width for readability */
+    text-align: left; /* Align text inside the section to the left */
+}
+
 /* Bullet Point Styling */
 main ul, main li {
-	text-align: left; /* Align bullet points and list items to the left */
-	margin: 0 auto; /* Center the block horizontally */
-	width: 70%; /* Match the width of paragraphs */
-	max-width: 800px; /* Restrict maximum width */
+    text-align: left; /* Align bullet points and list items to the left */
+    margin: 0 auto; /* Center the block horizontally */
+    width: 90%; /* Match the width of paragraphs */
+    max-width: 1200px; /* Restrict maximum width */
 }
 
 /* Footer Base Styling */
 footer {
-	padding: 10px;
-	text-align: center;
-	width: 100%; /* Ensure the footer spans the full width */
-	box-sizing: border-box; /* Include padding in the width */
+    padding: 10px;
+    text-align: center;
+    width: 100%; /* Ensure the footer spans the full width */
+    box-sizing: border-box; /* Include padding in the width */
 }
 
 /* Footer Links Container */
 .footer-links {
-	display: flex;
-	justify-content: center; /* Center the links */
-	gap: 10px; /* Add spacing between links */
+    display: flex;
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Add spacing between links */
 }
 
 footer a {
-	margin: 0;
-	text-decoration: none;
-	font-weight: bold;
-	color: darkred;
+    margin: 0;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
 }
 
 footer a:hover {
-	color: black; /* Change color on hover */
+    color: black; /* Change color on hover */
 }
