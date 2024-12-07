@@ -1,41 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<style>
-		#embedded-h2-contact	{
-			text-align: center;
-			font-size: 38px;
-			color: darkred;
-			background-color: lightgrey;
-		}
-		#embedded-contact 	{
-			text-align: center;
-			font-size: 30px;
-			color: darkred;
-			text-decoration: underline;
-		}
-		#image	{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 25%;
-		}
-		#external-nav-table	{
-			margin: 0 auto;
-			border-collapse: collapse;
-			width: 100%;
-			background-color: lightgrey;
-		}
-	</style>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contact Your Local Offices</title>
+	<!-- Link to External CSS -->
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="external-style-body">
+
+	<!-- Header Section -->
 	<header>
-		<h1 id="embedded-h2-contact">Contact Your Local Offices</h1>
+		<h1 class="title">Contact Your Local Offices</h1>
 		<nav>
-			<table id="external-nav-table">
+			<table class="external-nav-table">
 				<tr>
 					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
 					<td class="external-nav-td"><a href="aboutus.html" class="external-nav-a">About Us</a></td>
@@ -46,18 +24,34 @@
 			</table>
 		</nav>
 	</header>
+
+	<!-- Main Content Section -->
 	<main>
 		<img src="images/contact.jpg" alt="Voter Cartoon" id="image">
-		<h2 id="embedded-contact">Need Assistance?</h2>
+		<h2 id="embedded-h3">Need Assistance?</h2>
 		<p>If you have any questions not answered on this website, feel free to reach out to your local offices regarding any uncertainty.</p>
-		<p>Cross County Residents can find assistance at the Cross County Clerk's Office located at <br> 705 E Union Ave # 8, Wynne, AR 72396<br> Or by telephone at (870) 238-5735. To be directed to their website, feel free to <a href="https://www.crosscountyar.org/">click here!</a></p>
+		<p>
+			Cross County Residents can find assistance at the Cross County Clerk's Office located at 
+			<br>705 E Union Ave # 8, Wynne, AR 72396<br> 
+			Or by telephone at (870) 238-5735. To be directed to their website, feel free to 
+			<a href="https://www.crosscountyar.org/">click here!</a>
+		</p>
 		<br>
-		<p>St. Francis County Residents can find assistance at the St. Francis County Clerk's Office located at <br> 313 S Izard St #2, Forrest City, AR 72335 <br> or by telephone at (870) 261-1725. To be directed to their website, feel free to <a href="https://countyservices.azurewebsites.net/Home/County/143"> click here!</a></p>
+		<p>
+			St. Francis County Residents can find assistance at the St. Francis County Clerk's Office located at 
+			<br>313 S Izard St #2, Forrest City, AR 72335<br> 
+			or by telephone at (870) 261-1725. To be directed to their website, feel free to 
+			<a href="https://countyservices.azurewebsites.net/Home/County/143">click here!</a>
+		</p>
 	</main>
+
+	<!-- Footer Section -->
 	<footer>
-		<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> 
-		<br>
-		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
+		<div class="footer-links">
+			<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+		</div>
 	</footer>
+
 </body>
 </html>
