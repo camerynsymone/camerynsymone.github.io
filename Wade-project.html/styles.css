@@ -58,7 +58,7 @@
     color: darkred; /* Set the text color */
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
-    padding: 15px 0; /* Add vertical spacing */
+    padding: 0px 0; /* Add vertical spacing */
     margin: 0; /* Remove default margin */
     width: 100%; /* Ensure the element spans the full width */
     box-sizing: border-box; /* Include padding in the element's width */
