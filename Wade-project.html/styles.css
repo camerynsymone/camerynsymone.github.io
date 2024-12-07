@@ -4,7 +4,7 @@
 }
 
 /* Shared Header Title */
-.title {
+.title, #embedded-h1-candidate {
 	text-align: center;
 	font-size: 45px;
 	color: black;
@@ -18,39 +18,39 @@
 	background-color: darkred;
 }
 
-/* Navigation Table Cells */
 .external-nav-td {
 	padding: 5px;
 }
 
-/* Navigation Links */
 .external-nav-a {
 	color: beige;
 	font-size: 20px;
-	text-decoration: none; /* Remove underline by default */
+	text-decoration: none;
 }
 
-/* Navigation Links Hover Effect */
 .external-nav-a:hover {
-    color: black; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
+	color: black; /* Change text color on hover */
+	text-decoration: underline; /* Add underline on hover */
 }
 
-/* Shared Images */
-.center {
+/* Shared Section Titles */
+#embedded-h2-homepage, #embedded-h3, #titleline, #titleline2 {
+	text-align: center;
+	font-size: 38px;
+	color: darkred;
+	text-decoration: underline;
+}
+
+/* Center Images */
+.center, #image, #image2 {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 }
 
-/* Shared Section Titles (H2 and H3) */
-#embedded-h2-homepage,
-#embedded-h3 {
-	text-align: center;
-	font-size: 38px;
-	color: darkred;
-	text-decoration: underline;
+#image, #image2 {
+	width: 25%; /* Specific to candidate images */
 }
 
 /* Footer Base Styling */
@@ -68,7 +68,6 @@ footer {
 	gap: 10px; /* Add spacing between links */
 }
 
-/* Footer Links */
 footer a {
 	margin: 0;
 	text-decoration: none;
@@ -76,6 +75,9 @@ footer a {
 	color: darkred;
 }
 
+footer a:hover {
+	color: black; /* Change color on hover */
+}
 /* Footer Links Hover Effect */
 footer a:hover {
 	color: black; /* Change color on hover */
