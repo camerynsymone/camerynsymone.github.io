@@ -1,9 +1,14 @@
+/* Reset Default Browser Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in width/height calculations */
+}
+
 /* Body styling */
 .external-style-body {
     background-color: whitesmoke;
-    margin: 0; /* Remove default body margin */
-    padding: 0; /* Remove default body padding */
-    font-family: Arial, sans-serif; /* Set a default font family */
+    font-family: Arial, sans-serif; /* Default font */
 }
 
 /* Shared Header Title */
@@ -11,7 +16,7 @@
     text-align: center;
     font-size: 45px;
     color: black;
-    margin: 20px 0; /* Add some spacing around the title */
+    margin: 20px 0; /* Add spacing above and below */
 }
 
 /* Navigation Table */
@@ -20,20 +25,21 @@
     border-collapse: collapse;
     width: 100%; /* Make the navigation span the full width */
     background-color: darkred;
+    text-align: center; /* Center-align the text */
 }
 
 .external-nav-td {
-    padding: 10px; /* Add spacing inside table cells */
-    text-align: center; /* Center-align the text in each cell */
-    vertical-align: middle; /* Vertically center-align text */
+    padding: 10px; /* Add spacing inside each cell */
+    text-align: center; /* Center-align text in navigation items */
+    vertical-align: middle;
 }
 
 .external-nav-a {
     color: beige;
     font-size: 20px;
     text-decoration: none; /* Remove underline */
-    display: inline-block; /* Allow for padding and clickable areas */
-    padding: 5px 10px; /* Add padding for a clickable area */
+    display: inline-block; /* Allow padding and clickable areas */
+    padding: 5px 10px; /* Add clickable padding */
 }
 
 .external-nav-a:hover {
@@ -53,34 +59,42 @@
     color: darkred; /* Set the text color */
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
-    padding: 10px 0; /* Add padding for spacing */
+    padding: 15px 0; /* Add vertical spacing */
     margin: 0; /* Remove default margin */
-    width: 100vw; /* Ensure the grey background spans the full screen */
-    position: relative; /* Ensure proper positioning */
+    width: 100%; /* Make the grey background span the full width */
+    position: relative; /* Prevent positioning issues */
     left: 0; /* Align to the left edge of the viewport */
-    box-sizing: border-box; /* Include padding in the element's width */
 }
 
-/* Constrain and Center Text Inside Section Titles */
-#embedded-h2-homepage span,
-#embedded-h3 span,
-#titleline span,
-#titleline2 span,
-#embedded-h2-contact span,
-#embedded-h1-register span {
-    display: inline-block; /* Treat the text as a block-level element */
-    max-width: 1200px; /* Allow text to occupy up to 1200px */
-    width: 90%; /* Ensure the text block adapts responsively */
-    margin: 0 auto; /* Center the text block horizontally */
-    text-align: center; /* Center-align the text inside */
+/* Ensure Parent Containers Don’t Restrict Width */
+main {
+    max-width: 1200px; /* Allow main content to spread wider */
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 0 20px; /* Add padding for readability */
+}
+
+/* Paragraph Styling */
+main p {
+    text-align: left; /* Align text to the left */
+    margin: 20px auto; /* Center the paragraph block horizontally */
+    width: 90%; /* Allow the text to spread wider */
+    max-width: 1200px; /* Limit the maximum width for readability */
+    line-height: 1.8; /* Improve readability */
+}
+
+/* Section Styling */
+main section {
+    margin: 20px auto; /* Center the section block horizontally */
+    width: 90%; /* Allow the section to spread wider */
+    max-width: 1200px; /* Limit the maximum width for readability */
+    text-align: left; /* Align section content to the left */
 }
 
 /* Global Image Styling */
 img {
     display: block; /* Treat images as block elements */
     margin: 20px auto; /* Center images horizontally */
-    width: auto; /* Allow the image to scale naturally */
-    max-width: 100%; /* Prevent images from exceeding the container */
+    max-width: 100%; /* Prevent images from exceeding their container */
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -93,36 +107,6 @@ main img {
     width: auto; /* Allow images to resize proportionally */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the image fits within constraints */
-    box-sizing: border-box; /* Include padding/borders in size calculations */
-}
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-/* Constrain Main Container */
-main {
-    max-width: 1200px; /* Allow the main container to spread wider */
-    margin: 0 auto; /* Center the main content horizontally */
-    padding: 0 20px; /* Add padding for better readability on smaller screens */
-}
-
-/* Align Paragraphs Left but Center the Block Horizontally */
-main p {
-    text-align: left; /* Align text to the left */
-    margin: 20px auto; /* Center the paragraph block horizontally */
-    width: 90%; /* Allow the text to spread wider */
-    max-width: 1200px; /* Set a maximum width for readability */
-    line-height: 1.8; /* Improve readability */
-}
-
-/* Align Sections with Left-Aligned Content */
-main section {
-    margin: 20px auto; /* Center the section block horizontally */
-    width: 90%; /* Allow the section to spread wider */
-    max-width: 1200px; /* Limit the maximum width for readability */
-    text-align: left; /* Align text inside the section to the left */
 }
 
 /* Bullet Point Styling */
