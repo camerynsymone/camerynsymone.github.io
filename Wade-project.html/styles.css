@@ -62,7 +62,7 @@
 #embedded-h2-contact,
 #embedded-h1-register {
     text-align: center; /* Center the text */
-    font-size: 42px; /* Large text for visibility */
+    font-size: 32px; /* Large text for visibility */
     font-family: 'Merriweather', serif; /* Same font as title for consistency */
     font-weight: bold;
     color: #00274d; /* Dark blue text */
@@ -89,7 +89,7 @@ main p, main ul, main li {
     width: 90%; /* Allow wider text blocks */
     max-width: 1200px; /* Limit width for readability */
     font-family: 'Georgia', serif; /* Serif font for professional look */
-    font-size: 18px; /* Standard size for readability */
+    font-size: 16px; /* Standard size for readability */
     color: #333; /* Dark grey text */
 }
 
