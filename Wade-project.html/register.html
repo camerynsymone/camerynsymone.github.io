@@ -1,42 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This page is to help users register to vote only with the use of hyperlinks -->
 <head>
-	<style>
-		#embedded-h1-register	{
-			text-align: center;
-			font-size: 38px;
-			color: darkred;
-			background-color: lightgrey;
-		}
-		#image	{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 25%;
-		}
-		#titleline	{
-			text-align: center;
-			font-size: 30px;
-			color: darkred;
-			text-decoration: underline;
-		}
-		#external-nav-table	{
-			margin: 0 auto;
-			border-collapse: collapse;
-			width: 100%;
-			background-color: lightgrey;
-		}
-	</style>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Where To Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Where to Register</title>
+	<!-- Link to External CSS -->
+	<link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="external-style-body">
+
+	<!-- Header Section -->
 	<header>
-		<h1 id="embedded-h1-register"> Register</h1>
+		<h1 class="title">Register</h1>
 		<nav>
-			<table id="external-nav-table">
+			<table class="external-nav-table">
 				<tr>
 					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
 					<td class="external-nav-td"><a href="aboutus.html" class="external-nav-a">About Us</a></td>
@@ -47,19 +24,32 @@
 			</table>
 		</nav>
 	</header>
+
+	<!-- Main Content Section -->
 	<main>
-	<h1 id="titleline">Get Registered Today!</h1>
-	<p>Unsure if you are registered to vote? Not sure where your local polls are?<a href="https://www.voterview.ar-nova.org/voterview">Click here</a> to be able to use your address to find your polling station for the upcoming election! Using the hyperlink above, you can also find out registration information.</p>
-	<img src="images/register.jpg" alt="register image" id="image">
-	<br>
-	<p>If you need help with registering to vote, <a href="https://www.dmv.org/ar-arkansas/voter-registration.php">click here!</a> Here you can find more information regarding voter eligibilty,deadlines and more!</p>
-	
-	</main>
-	<footer>
-<!-- Validation Links -->
-		<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> 
+		<h2 id="embedded-h3">Get Registered Today!</h2>
+		<p>
+			Unsure if you are registered to vote? Not sure where your local polls are?
+			<a href="https://www.voterview.ar-nova.org/voterview">Click here</a> 
+			to use your address to find your polling station for the upcoming election! Using the hyperlink above, you can also find 
+			out registration information.
+		</p>
+		<img src="images/register.jpg" alt="Register Image" id="image">
 		<br>
-		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
+		<p>
+			If you need help with registering to vote, 
+			<a href="https://www.dmv.org/ar-arkansas/voter-registration.php">click here!</a> 
+			Here you can find more information regarding voter eligibility, deadlines, and more!
+		</p>
+	</main>
+
+	<!-- Footer Section -->
+	<footer>
+		<div class="footer-links">
+			<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+			<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+		</div>
 	</footer>
+
 </body>
 </html>
