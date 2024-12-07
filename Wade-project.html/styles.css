@@ -65,10 +65,8 @@
 	width: 25%; /* New class for small images */
 }
 
-/* Center Paragraph Text */
-p {
-    text-align: center;
-    margin: 0 auto; /* Ensure proper alignment if there are width restrictions */
+main {
+    text-align: center; /* Center-aligns child elements, including paragraphs */
 }
 
 /* Footer Base Styling */
