@@ -50,13 +50,19 @@
 
 /* Global Image Styling */
 img {
-	display: block; /* Ensure images are treated as block elements */
-	margin: 20px auto; /* Center images horizontally with spacing */
-	width: auto; /* Allow natural width unless constrained by max-width */
-	height: auto; /* Maintain aspect ratio */
-	max-width: 50%; /* Limit images to 50% of their parent container's width */
-	max-height: 300px; /* Prevent excessively tall images */
-	box-sizing: border-box; /* Include padding/border in width calculations */
+    display: block; /* Treat all images as block elements */
+    margin: 20px auto; /* Center images horizontally with some spacing */
+    max-width: 100%; /* Prevent images from exceeding their container width */
+    width: auto; /* Use the intrinsic width unless max-width is reached */
+    max-height: 300px; /* Prevent excessively tall images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Specific Adjustment for the Candidates Page */
+main img {
+    width: 25%; /* Limit candidates' images to 25% of their container */
+    max-width: 300px; /* Ensure a maximum width for candidate images */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
