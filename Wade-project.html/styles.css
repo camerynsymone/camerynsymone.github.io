@@ -54,7 +54,6 @@
     padding: 0px 0; /* Add vertical spacing */
     margin: 0; /* Remove default margin */
     width: 100%; /* Ensure the element spans the full width */
-    box-sizing: border-box; /* Include padding in the element's width */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
