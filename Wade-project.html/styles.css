@@ -8,77 +8,87 @@
 /* Body Styling */
 .external-style-body {
     background-color: whitesmoke;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Georgia', serif; /* Professional serif font for the main body */
     overflow-x: hidden; /* Prevent horizontal scrolling */
+    line-height: 1.8; /* Improve readability */
+    color: #333; /* Dark text for better contrast */
 }
 
 /* Shared Header Title */
 .title {
     text-align: center;
-    font-size: 45px;
-    color: black;
-    margin: 20px 0; /* Add spacing above and below */
+    font-size: 50px; /* Larger title for emphasis */
+    font-family: 'Merriweather', serif; /* Elegant serif font for the title */
+    font-weight: bold;
+    color: #00274d; /* Dark blue color for a professional tone */
+    margin: 20px 0;
 }
 
-/* Navigation Table */
+/* Navigation Bar */
 .external-nav-table {
-    margin: 0 auto; /* Center the navigation bar */
+    margin: 0 auto;
     border-collapse: collapse;
-    width: 100%; /* Make the navigation span the full width */
-    background-color: darkred;
+    width: 100%;
+    background-color: #004080; /* Deep blue for a clean, professional look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 .external-nav-td {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
 }
 
 .external-nav-a {
-    color: beige;
+    color: white; /* White text for contrast */
     font-size: 20px;
+    font-family: 'Arial', sans-serif; /* Clean sans-serif font for navigation links */
     text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalize for a formal look */
 }
 
 .external-nav-a:hover {
-    color: black; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #ffcc00; /* Gold accent color on hover */
+    text-decoration: underline; /* Add underline for hover effect */
 }
 
-/* Section Titles - Ensure Full-Screen Grey Background */
+/* Section Titles with Full-Screen Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-    text-align: center; /* Center-align the text */
-    font-size: 38px; /* Set the font size */
-    color: darkred; /* Set the text color */
-    text-decoration: underline; /* Underline the text */
-    background-color: lightgrey; /* Set the grey background */
-    padding: 15px 0; /* Add vertical spacing */
-    margin: 0; /* Remove default margin */
-    width: 100vw; /* Force the grey background to span the entire viewport width */
-    position: relative; /* Allow it to be positioned relative to the viewport */
-    left: 0; /* Align the background to the left of the screen */
+    text-align: center;
+    font-size: 42px; /* Slightly larger for better visibility */
+    font-family: 'Merriweather', serif; /* Consistent with the title font */
+    font-weight: bold;
+    color: #00274d; /* Dark blue text */
+    background-color: #e6e6e6; /* Softer grey background */
+    padding: 20px 0;
+    margin: 0;
+    width: 100vw; /* Ensure the grey spans the full viewport width */
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%); /* Center the element horizontally */
 }
 
-/* Ensure Parent Containers Don’t Restrict Width */
+/* Main Content Layout */
 main, section {
-    max-width: 1200px; /* Constrain the width for readability */
+    max-width: 1200px;
     margin: 0 auto; /* Center the main content horizontally */
-    padding: 20px; /* Add padding for spacing */
+    padding: 20px;
 }
 
 /* Paragraph Styling */
-main p {
-    text-align: left; /* Align text to the left */
-    margin: 20px auto; /* Center the paragraph block horizontally */
-    width: 90%; /* Allow the text to spread wider */
+main p, main ul, main li {
+    text-align: left; /* Align text and lists to the left */
+    margin: 20px auto; /* Center the block horizontally */
+    width: 90%; /* Allow text to spread wider */
     max-width: 1200px; /* Limit the maximum width for readability */
-    line-height: 1.8; /* Improve readability */
+    font-family: 'Georgia', serif; /* Elegant serif font for body text */
+    font-size: 18px; /* Slightly larger font size for readability */
+    color: #333; /* Darker grey for a clean, professional appearance */
 }
 
 /* Global Image Styling */
@@ -93,8 +103,6 @@ img {
 main img {
     max-width: 300px; /* Constrain maximum width */
     max-height: 300px; /* Constrain maximum height */
-    width: auto; /* Scale width proportionally */
-    height: auto; /* Scale height proportionally */
     object-fit: contain; /* Ensure images fit within constraints */
 }
 
@@ -106,28 +114,31 @@ main ul, main li {
     max-width: 1200px; /* Restrict maximum width */
 }
 
-/* Footer Base Styling */
+/* Footer */
 footer {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    width: 100%; /* Ensure the footer spans the full width */
-    box-sizing: border-box;
+    width: 100%;
+    background-color: #004080; /* Match navigation bar color */
+    color: white; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Clean font for footer */
+    font-size: 16px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
 }
 
-/* Footer Links Container */
 .footer-links {
     display: flex;
     justify-content: center; /* Center the links */
-    gap: 10px; /* Add spacing between links */
+    gap: 15px; /* Add spacing between links */
 }
 
 footer a {
-    margin: 0;
     text-decoration: none;
     font-weight: bold;
-    color: darkred;
+    color: white; /* White text for contrast */
+    font-size: 16px;
 }
 
 footer a:hover {
-    color: black; /* Change color on hover */
+    color: #ffcc00; /* Gold accent color on hover */
 }
