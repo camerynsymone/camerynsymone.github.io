@@ -30,7 +30,7 @@
 
 /* Navigation Links Hover Effect */
 .external-nav-a:hover {
-    color: black; /* Darken the text color on hover */
+    	color: black; /* Darken the text color on hover */
 }
 
 /* Header Title */
@@ -68,21 +68,21 @@
 footer {
     padding: 10px;
     text-align: center;
+    width: 100%; /* Ensure the footer spans the entire width */
+    box-sizing: border-box; /* Include padding in the width */
 }
-
 /* Footer Links Container */
 .footer-links {
-    text-align: center; /* Center the content */
-    display: flex; /* Use flexbox for alignment */
-    justify-content: center; /* Center the links horizontally */
-    gap: 10px; /* Add spacing between links */
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Adds spacing between links */
 }
 
 /* Footer Links */
 footer a {
+    margin: 0;
     text-decoration: none;
     font-weight: bold;
-    margin: 0 5px;
 }
 
 /* Footer Links Hover Effect */
