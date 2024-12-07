@@ -35,25 +35,38 @@
 	text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Titles */
+/* Section Titles - Grey Background Across Screen */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-    text-align: center; /* Center the text */
-    font-size: 38px; /* Set the font size */
-    color: darkred; /* Set the text color */
-    text-decoration: underline; /* Underline the text */
-    background-color: lightgrey; /* Set the grey background */
-    padding: 10px 0; /* Add padding for spacing */
-    margin: 0; /* Remove default margin */
-    width: 100vw; /* Ensure the element spans the full viewport width */
-    max-width: 100%; /* Prevent any restriction from parent containers */
-    position: relative; /* Ensure it positions relative to the viewport */
-    left: 0; /* Align to the left edge of the viewport */
-    box-sizing: border-box; /* Include padding in the element's width */
+	background-color: lightgrey; /* Set the grey background */
+	padding: 10px 0; /* Add padding for spacing */
+	margin: 0; /* Remove default margin */
+	width: 100vw; /* Ensure the element spans the full viewport width */
+	box-sizing: border-box; /* Include padding in the element's width */
+	text-align: center; /* Center the text */
+	color: darkred; /* Set the text color */
+	font-size: 38px; /* Set the font size */
+	text-decoration: underline; /* Underline the text */
+	position: relative; /* Ensure proper positioning */
+	left: 0; /* Align to the left edge of the viewport */
+}
+
+/* Constrain Text Inside the Section Titles */
+#embedded-h2-homepage span,
+#embedded-h3 span,
+#titleline span,
+#titleline2 span,
+#embedded-h2-contact span,
+#embedded-h1-register span {
+	display: inline-block; /* Treat the text as a block-level element */
+	max-width: 800px; /* Constrain the text to a readable width */
+	width: 90%; /* Make the text adapt responsively */
+	margin: 0 auto; /* Center the text block */
+	text-align: center; /* Align text inside the block */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
@@ -111,7 +124,7 @@ main section {
 main ul, main li {
 	text-align: left; /* Align bullet points and list items to the left */
 	margin: 0 auto; /* Center the block horizontally */
-	width: 50%; /* Match the width of paragraphs */
+	width: 70%; /* Match the width of paragraphs */
 	max-width: 800px; /* Restrict maximum width */
 }
 
