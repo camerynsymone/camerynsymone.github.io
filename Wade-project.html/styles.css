@@ -51,7 +51,7 @@
 /* Global Image Styling */
 img {
     display: block; /* Treat all images as block elements */
-    margin: 20px auto; /* Center images horizontally with spacing */
+    margin: 20px auto; /* Center images horizontally */
     width: auto; /* Allow the image to scale naturally */
     max-width: 100%; /* Prevent images from exceeding their container */
     height: auto; /* Maintain aspect ratio */
@@ -59,14 +59,10 @@ img {
 
 /* Strict Constraints for Candidate Images in <main> */
 main img {
-    display: block; /* Center images */
-    margin: 20px auto; /* Center horizontally */
-    width: 300px; /* Force the width to 300px */
-    max-width: 300px; /* Prevent the image from exceeding 300px width */
+    max-width: 300px; /* Restrict image width to 300px */
+    max-height: 300px; /* Restrict image height to 300px */
+    width: auto; /* Allow images to scale naturally */
     height: auto; /* Maintain aspect ratio */
-    max-height: 300px; /* Ensure the height doesn't exceed 300px */
-    object-fit: contain; /* Fit image within the specified dimensions */
-    box-sizing: border-box; /* Include padding and borders in calculations */
 }
 
 /* Constrain Parent Container */
@@ -90,6 +86,14 @@ main section {
 	width: 50%; /* Set width relative to the parent container */
 	max-width: 800px; /* Limit the maximum width for readability */
 	text-align: left; /* Align text inside the section to the left */
+}
+
+/* Bullet Point Styling */
+main ul, main li {
+    text-align: left; /* Align bullet points and list items to the left */
+    margin: 0 auto; /* Center the block horizontally */
+    width: 50%; /* Match the width of paragraphs */
+    max-width: 800px; /* Restrict maximum width */
 }
 
 /* Footer Base Styling */
