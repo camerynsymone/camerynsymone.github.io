@@ -1,22 +1,15 @@
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Georgia&display=swap');
-
 /* Body Styling */
 .external-style-body {
     background-color: whitesmoke;
-    font-family: 'Georgia', serif; /* Serif font for the main body */
+    font-family: Arial, sans-serif;
     overflow-x: hidden; /* Prevent horizontal scrolling */
-    line-height: 1.8; /* Improve readability */
-    color: #333; /* Dark text for better contrast */
 }
 
 /* Shared Header Title */
 .title {
     text-align: center;
-    font-size: 50px; /* Larger title for emphasis */
-    font-family: 'Merriweather', serif; /* Elegant serif font for the title */
-    font-weight: bold;
-    color: #00274d; /* Dark blue color for a professional tone */
+    font-size: 45px;
+    color: black;
     margin: 20px 0;
 }
 
@@ -25,30 +18,26 @@
     margin: 0 auto;
     border-collapse: collapse;
     width: 100%;
-    background-color: #004080; /* Deep blue */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    background-color: darkred;
 }
 
 .external-nav-td {
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
 .external-nav-a {
-    color: white; /* White text for contrast */
+    color: beige;
     font-size: 20px;
-    font-family: 'Arial', sans-serif; /* Clean sans-serif font for navigation links */
     text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
 }
 
 .external-nav-a:hover {
-    color: #ffcc00; /* Gold accent color on hover */
-    text-decoration: underline; /* Add underline for hover effect */
+    color: black; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Titles */
+/* Section Titles with Full-Screen Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
@@ -56,12 +45,11 @@
 #embedded-h2-contact,
 #embedded-h1-register {
     text-align: center;
-    font-size: 36px; /* Slightly larger for better visibility */
-    font-family: 'Merriweather', serif; /* Consistent with the title font */
-    font-weight: bold;
-    color: #00274d; /* Dark blue text */
-    background-color: #e6e6e6; /* Grey background */
-    padding: 20px 0;
+    font-size: 38px;
+    color: darkred;
+    text-decoration: underline;
+    background-color: lightgrey;
+    padding: 15px 0;
     margin: 0;
     width: 100vw; /* Ensure the grey spans the full viewport width */
     position: relative;
@@ -80,17 +68,15 @@ main, section {
 main p, main ul, main li {
     text-align: left; /* Align text and lists to the left */
     margin: 20px auto; /* Center the block horizontally */
-    width: 80%; /* Allow text to spread wider */
+    width: 90%; /* Set width relative to the viewport */
     max-width: 1200px; /* Limit the maximum width for readability */
-    font-family: 'Georgia', serif; /* Elegant serif font for body text */
-    font-size: 18px; /* Slightly larger font size for readability */
-    color: #333; /* Darker grey */
+    line-height: 1.8;
 }
 
 /* Global Image Styling */
 img {
-    display: block; /* Treat images as block elements */
-    margin: 20px auto; /* Center images horizontally */
+    display: block;
+    margin: 20px auto; /* Center all images */
     max-width: 100%; /* Prevent images from exceeding their container */
     height: auto; /* Maintain aspect ratio */
 }
@@ -102,39 +88,26 @@ main img {
     object-fit: contain; /* Ensure images fit within constraints */
 }
 
-/* Bullet Point Styling */
-main ul, main li {
-    text-align: left; /* Align bullet points and list items to the left */
-    margin: 0 auto; /* Center the block horizontally */
-    width: 90%; /* Match the width of paragraphs */
-    max-width: 1200px; /* Restrict maximum width */
-}
-
 /* Footer */
 footer {
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     width: 100%;
-    background-color: #004080; /* Match navigation bar color */
-    color: white; /* White text for contrast */
-    font-family: 'Arial', sans-serif; /* Clean font for footer */
-    font-size: 16px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    background-color: lightgrey;
 }
 
 .footer-links {
     display: flex;
-    justify-content: center; /* Center the links */
-    gap: 15px; /* Add spacing between links */
+    justify-content: center;
+    gap: 10px; /* Add spacing between links */
 }
 
 footer a {
     text-decoration: none;
     font-weight: bold;
-    color: white; /* White text for contrast */
-    font-size: 16px;
+    color: darkred;
 }
 
 footer a:hover {
-    color: #ffcc00; /* Gold accent color on hover */
+    color: black;
 }
