@@ -48,21 +48,13 @@
 	padding: 10px 0;
 }
 
-/* Center Images */
-.center,
-#image {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-}
-
-#image {
-	width: 25%; /* Specific for smaller images */
-}
-
-.small-image {
-	width: 25%; /* New class for small images */
+/* Global Image Styling */
+img {
+	display: block; /* Ensure images are treated as block elements */
+	margin: 20px auto; /* Center images horizontally with spacing */
+	max-width: 50%; /* Limit images to 50% of their container's width */
+	max-height: 400px; /* Prevent images from becoming too tall */
+	height: auto; /* Maintain aspect ratio */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
@@ -102,6 +94,10 @@ footer a {
 	text-decoration: none;
 	font-weight: bold;
 	color: darkred;
+}
+
+footer a:hover {
+	color: black; /* Change color on hover */
 }
 
 footer a:hover {
