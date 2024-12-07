@@ -51,18 +51,20 @@
 /* Global Image Styling */
 img {
     display: block; /* Treat all images as block elements */
-    margin: 20px auto; /* Center images horizontally with some spacing */
-    max-width: 100%; /* Prevent images from exceeding their container width */
-    width: auto; /* Use the intrinsic width unless max-width is reached */
-    max-height: 300px; /* Prevent excessively tall images */
+    margin: 20px auto; /* Center all images horizontally with spacing */
+    max-width: 100%; /* Prevent images from exceeding the width of their container */
     height: auto; /* Maintain aspect ratio */
 }
 
-/* Specific Adjustment for the Candidates Page */
+/* Specific Candidate Images on Candidates Page */
 main img {
-    width: 25%; /* Limit candidates' images to 25% of their container */
-    max-width: 300px; /* Ensure a maximum width for candidate images */
+    display: block; /* Center the image as a block element */
+    margin: 20px auto; /* Center the image horizontally */
+    max-width: 300px; /* Restrict maximum width */
+    max-height: 300px; /* Restrict maximum height */
+    width: auto; /* Allow images to resize proportionally */
     height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within the constraints */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
