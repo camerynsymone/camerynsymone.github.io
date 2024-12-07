@@ -1,6 +1,8 @@
 /* Body styling */
 .external-style-body {
 	background-color: whitesmoke;
+	margin: 0; /* Remove default body margin */
+	padding: 0; /* Remove default body padding */
 }
 
 /* Shared Header Title */
@@ -40,39 +42,51 @@
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-	text-align: center;
-	font-size: 38px;
-	color: darkred;
-	text-decoration: underline;
-	background-color: lightgrey;
-	padding: 10px 0;
+	text-align: center; /* Center the text */
+	font-size: 38px; /* Set the font size */
+	color: darkred; /* Set the text color */
+	text-decoration: underline; /* Underline the text */
+	background-color: lightgrey; /* Set the grey background */
+	padding: 10px 0; /* Add padding for spacing */
+	margin: 0; /* Remove default margin */
+	width: 100vw; /* Make the background span the full viewport width */
+	position: relative; /* Ensure it positions relative to the viewport */
+	left: 0; /* Align to the left edge of the viewport */
+	box-sizing: border-box; /* Include padding in the element's width */
+}
+
+/* Ensure Parent Containers Don’t Restrict Width */
+main, section {
+	width: 100%; /* Ensure the container spans the full width */
+	margin: 0; /* Remove default margins */
+	padding: 0; /* Remove default padding */
 }
 
 /* Global Image Styling */
 img {
-    display: block; /* Treat images as block elements */
-    margin: 20px auto; /* Center images horizontally */
-    width: auto; /* Allow the image to scale naturally */
-    max-width: 100%; /* Ensure images don’t exceed the container's width */
-    height: auto; /* Maintain aspect ratio */
+	display: block; /* Treat images as block elements */
+	margin: 20px auto; /* Center images horizontally */
+	width: auto; /* Allow the image to scale naturally */
+	max-width: 100%; /* Prevent images from exceeding the container */
+	height: auto; /* Maintain aspect ratio */
 }
 
-/* Specific Styling for Images in <main> */
+/* Strict Constraints for Candidate Images in <main> */
 main img {
-    display: block; /* Ensure images are block elements */
-    margin: 20px auto; /* Center images horizontally */
-    max-width: 300px !important; /* Force the maximum width to 300px */
-    max-height: 300px !important; /* Force the maximum height to 300px */
-    width: auto !important; /* Allow images to resize proportionally */
-    height: auto !important; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure the image fits within the box */
-    box-sizing: border-box; /* Include padding/borders in size calculations */
+	display: block; /* Ensure images are block elements */
+	margin: 20px auto; /* Center images horizontally */
+	max-width: 300px; /* Restrict maximum width to 300px */
+	max-height: 300px; /* Restrict maximum height to 300px */
+	width: auto; /* Allow images to resize proportionally */
+	height: auto; /* Maintain aspect ratio */
+	object-fit: contain; /* Ensure the image fits within constraints */
+	box-sizing: border-box; /* Include padding/borders in size calculations */
 }
 
-/* Constrain Parent Container */
+/* Constrain Main Container */
 main {
-    max-width: 800px; /* Limit the width of the main container */
-    margin: 0 auto; /* Center the main content horizontally */
+	max-width: 800px; /* Limit the width of the main container */
+	margin: 0 auto; /* Center the main content horizontally */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
@@ -94,10 +108,10 @@ main section {
 
 /* Bullet Point Styling */
 main ul, main li {
-    text-align: left; /* Align bullet points and list items to the left */
-    margin: 0 auto; /* Center the block horizontally */
-    width: 50%; /* Match the width of paragraphs */
-    max-width: 800px; /* Restrict maximum width */
+	text-align: left; /* Align bullet points and list items to the left */
+	margin: 0 auto; /* Center the block horizontally */
+	width: 50%; /* Match the width of paragraphs */
+	max-width: 800px; /* Restrict maximum width */
 }
 
 /* Footer Base Styling */
