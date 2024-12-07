@@ -52,9 +52,11 @@
 img {
 	display: block; /* Ensure images are treated as block elements */
 	margin: 20px auto; /* Center images horizontally with spacing */
-	max-width: 50%; /* Limit images to 50% of their container's width */
-	max-height: 400px; /* Prevent images from becoming too tall */
+	width: auto; /* Allow natural width unless constrained by max-width */
 	height: auto; /* Maintain aspect ratio */
+	max-width: 50%; /* Limit images to 50% of their parent container's width */
+	max-height: 300px; /* Prevent excessively tall images */
+	box-sizing: border-box; /* Include padding/border in width calculations */
 }
 
 /* Align Paragraphs Left but Center the Block Horizontally */
@@ -94,10 +96,6 @@ footer a {
 	text-decoration: none;
 	font-weight: bold;
 	color: darkred;
-}
-
-footer a:hover {
-	color: black; /* Change color on hover */
 }
 
 footer a:hover {
