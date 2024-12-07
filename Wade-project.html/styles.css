@@ -62,7 +62,7 @@
 #embedded-h2-contact,
 #embedded-h1-register {
     text-align: center; /* Center the text */
-    font-size: 34px; /* Large text for visibility */
+    font-size: 36px; /* Large text for visibility */
     font-family: 'Merriweather', serif; /* Same font as title for consistency */
     font-weight: bold;
     color: #00274d; /* Dark blue text */
@@ -89,7 +89,7 @@ main p, main ul, main li {
     width: 90%; /* Allow wider text blocks */
     max-width: 1200px; /* Limit width for readability */
     font-family: 'Georgia', serif; /* Serif font for professional look */
-    font-size: 16px; /* Standard size for readability */
+    font-size: 18px; /* Standard size for readability */
     color: #333; /* Dark grey text */
 }
 
@@ -116,7 +116,7 @@ footer {
     background-color: #004080; /* Same blue as navigation bar */
     color: white; /* White text for contrast */
     font-family: 'Arial', sans-serif; /* Clean font */
-    font-size: 16px; /* Standard font size */
+    font-size: 18px; /* Standard font size */
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow at the top */
 }
 
