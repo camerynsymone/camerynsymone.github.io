@@ -61,6 +61,10 @@
 	width: 25%; /* Specific for smaller images */
 }
 
+.small-image {
+	width: 25%; /* New class for small images */
+}
+
 /* Footer Base Styling */
 footer {
 	padding: 10px;
