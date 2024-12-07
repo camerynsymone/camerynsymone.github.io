@@ -73,7 +73,7 @@ main {
 p {
     text-align: center; /* Center-align text inside paragraphs */
     margin: 0 auto; /* Center the paragraph block itself */
-    width: 80%; /* Set width relative to the parent container */
+    width: 50%; /* Set width relative to the parent container */
     max-width: 800px; /* Limit the maximum width for readability */
     line-height: 1.6; /* Improve readability with proper line spacing */
 }
