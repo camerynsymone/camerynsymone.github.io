@@ -1,126 +1,139 @@
 /* Import Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
-/* Body */
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element size */
+}
+
+/* Body Styling */
 .external-style-body {
-    background-color: whitesmoke;
-    font-family: 'Georgia', serif; /* Serif font for a formal look */
-    color: #333; /* Dark grey for text */
-    line-height: 1.8; /* Space between lines */
-    overflow-x: hidden; /* No horizontal scrolling */
+    background-color: whitesmoke; /* Light grey background */
+    font-family: 'Georgia', serif; /* Classic font for readability */
+    overflow-x: hidden; /* Prevent side scrolling */
+    line-height: 1.8; /* Add space between lines */
+    color: #333; /* Dark grey text for contrast */
 }
 
 /* Main Title */
 .title {
-    text-align: center;
-    font-size: 50px;
-    font-family: 'Merriweather', serif; /* Professional font */
+    text-align: center; /* Center the text */
+    font-size: 50px; /* Large font for emphasis */
+    font-family: 'Merriweather', serif; /* Formal title font */
     font-weight: bold;
-    color: #00274d; /* Navy blue */
-    margin: 20px 0;
+    color: #00274d; /* Dark blue for a professional look */
+    margin: 20px 0; /* Add space above and below */
 }
 
 /* Navigation Bar */
 .external-nav-table {
-    margin: 0 auto; /* Center the nav bar */
+    margin: 0 auto; /* Center the navigation bar */
     width: 100%; /* Full width */
-    background-color: darkred;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    background-color: #004080; /* Deep blue background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
 
 .external-nav-td {
-    padding: 15px;
-    text-align: center; /* Center links */
+    padding: 15px; /* Add space around text */
+    text-align: center; /* Center-align the links */
 }
 
 .external-nav-a {
     color: white; /* White text */
     font-size: 20px;
-    text-decoration: none; /* No underline */
+    font-family: 'Arial', sans-serif; /* Clean font for navigation links */
+    text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* All caps */
+    text-transform: uppercase; /* All caps for formality */
 }
 
 .external-nav-a:hover {
-    color: #ffcc00; /* Gold on hover */
-    text-decoration: underline;
+    color: #ffcc00; /* Gold text on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Headings */
+/* Section Titles with Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-    text-align: center; /* Center text */
-    font-size: 42px;
-    font-family: 'Merriweather', serif;
+    text-align: center; /* Center the text */
+    font-size: 42px; /* Large text for visibility */
+    font-family: 'Merriweather', serif; /* Same font as title for consistency */
     font-weight: bold;
-    color: #00274d;
+    color: #00274d; /* Dark blue text */
     background-color: lightgrey; /* Grey background */
-    padding: 20px 0;
+    padding: 20px 0; /* Add space inside the heading */
     margin: 0;
-    width: 100vw; /* Full screen width */
+    width: 100vw; /* Stretch across the screen */
     position: relative;
     left: 50%;
-    transform: translateX(-50%); /* Center the background */
+    transform: translateX(-50%); /* Center the grey background */
 }
 
-/* Main Content */
+/* Main Content Area */
 main, section {
-    max-width: 1200px; /* Limit content width */
-    margin: 0 auto; /* Center content */
-    padding: 20px;
+    max-width: 1200px; /* Limit content width for readability */
+    margin: 0 auto; /* Center the content */
+    padding: 20px; /* Add space inside */
 }
 
 /* Paragraphs and Lists */
 main p, main ul, main li {
-    text-align: left; /* Align text left */
-    margin: 20px auto; /* Center block */
-    width: 90%; /* Spread text wider */
-    max-width: 1200px; /* Keep text readable */
-    font-size: 18px;
-    color: #333; /* Dark grey */
+    text-align: left; /* Align text and lists to the left */
+    margin: 20px auto; /* Center the block horizontally */
+    width: 90%; /* Allow wider text blocks */
+    max-width: 1200px; /* Limit width for readability */
+    font-family: 'Georgia', serif; /* Serif font for professional look */
+    font-size: 18px; /* Standard size for readability */
+    color: #333; /* Dark grey text */
 }
 
 /* Images */
 img {
-    display: block; /* Treat as block element */
+    display: block; /* Treat images like blocks */
     margin: 20px auto; /* Center images */
-    max-width: 100%; /* Fit container */
-    height: auto; /* Keep aspect ratio */
+    max-width: 100%; /* Prevent oversized images */
+    height: auto; /* Keep image proportions */
 }
 
-/* Limit Images in <main> */
+/* Main Content Images */
 main img {
-    max-width: 300px;
-    max-height: 300px;
-    object-fit: contain; /* Fit within size */
+    max-width: 300px; /* Limit width */
+    max-height: 300px; /* Limit height */
+    object-fit: contain; /* Ensure images fit within their box */
 }
 
 /* Footer */
 footer {
-    padding: 20px;
+    padding: 20px; /* Add space inside the footer */
     text-align: center;
-    width: 100%;
-    background-color: #004080; /* Deep blue */
-    color: white;
-    font-size: 16px;
+    width: 100%; /* Full-width footer */
+    background-color: #004080; /* Same blue as navigation bar */
+    color: white; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Clean font */
+    font-size: 16px; /* Standard font size */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Add shadow at the top */
 }
 
+/* Footer Links */
 .footer-links {
-    display: flex;
-    justify-content: center; /* Center links */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the links */
     gap: 15px; /* Space between links */
 }
 
 footer a {
-    text-decoration: none; /* No underline */
-    font-weight: bold;
-    color: white;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+    color: white; /* White text */
+    font-size: 16px;
 }
 
 footer a:hover {
-    color: #ffcc00; /* Gold on hover */
+    color: #ffcc00; /* Gold hover */
 }
