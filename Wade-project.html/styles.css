@@ -1,14 +1,11 @@
-/* Reset Default Browser Styles */
-* {
+/* Reset Default Styles */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Include padding and borders in width/height calculations */
-}
-
-/* Body styling */
-.external-style-body {
-    background-color: whitesmoke;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Include padding and borders in element dimensions */
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    background-color: whitesmoke; /* Background for the entire page */
+    font-family: Arial, sans-serif; /* Set a default font */
 }
 
 /* Shared Header Title */
@@ -28,22 +25,24 @@
 }
 
 .external-nav-td {
-    padding: 10px;
-    text-align: center;
+    padding: 10px; /* Add spacing inside each cell */
+    text-align: center; /* Center-align text in navigation items */
 }
 
 .external-nav-a {
     color: beige;
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Allow padding to create a larger clickable area */
+    padding: 5px 10px; /* Add clickable padding */
 }
 
 .external-nav-a:hover {
-    color: black;
-    text-decoration: underline;
+    color: black; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
-/* Section Titles - Ensure Full-Screen Grey Background */
+/* Section Titles - Full-Screen Grey Background */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
@@ -57,34 +56,60 @@
     background-color: lightgrey; /* Set the grey background */
     padding: 15px 0; /* Add vertical spacing */
     margin: 0; /* Remove default margin */
-    width: 100vw; /* Force the grey background to span the entire viewport width */
-    position: relative; /* Position relative to avoid parent container constraints */
-    left: 0; /* Align to the left edge of the screen */
+    width: 100%; /* Ensure the element spans the full container width */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
+
+/* Ensure Parent Containers Don’t Restrict Width */
 main, section {
     width: 100%; /* Ensure parent containers span the full width */
-    max-width: 1200px; /* Prevent any maximum width restrictions */
+    max-width: none; /* Prevent any maximum width restrictions */
     margin: 0; /* Remove default margins */
-    margin: 0 auto; /* Center main content */
-    padding: 0; /* Add padding for spacing */
-    text-align: left; /* Align text content to the left */
+    padding: 0; /* Remove default padding */
 }
 
 /* Paragraph Styling */
 main p {
-    text-align: left;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    line-height: 1.8;
+    text-align: left; /* Align text to the left */
+    margin: 20px auto; /* Center the paragraph block horizontally */
+    width: 90%; /* Allow the text to spread wider */
+    max-width: 1200px; /* Limit the maximum width for readability */
+    line-height: 1.8; /* Improve readability */
 }
 
-/* Image Styling */
+/* Section Styling */
+main section {
+    margin: 20px auto; /* Center the section block horizontally */
+    width: 90%; /* Allow the section to spread wider */
+    max-width: 1200px; /* Limit the maximum width for readability */
+    text-align: left; /* Align section content to the left */
+}
+
+/* Global Image Styling */
 img {
-    display: block;
-    margin: 20px auto;
-    max-width: 100%;
-    height: auto;
+    display: block; /* Treat images as block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 100%; /* Prevent images from exceeding their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Strict Constraints for Candidate Images in <main> */
+main img {
+    display: block; /* Ensure images are block elements */
+    margin: 20px auto; /* Center images horizontally */
+    max-width: 300px; /* Restrict maximum width to 300px */
+    max-height: 300px; /* Restrict maximum height to 300px */
+    width: auto; /* Allow images to resize proportionally */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image fits within constraints */
+}
+
+/* Bullet Point Styling */
+main ul, main li {
+    text-align: left; /* Align bullet points and list items to the left */
+    margin: 0 auto; /* Center the block horizontally */
+    width: 90%; /* Match the width of paragraphs */
+    max-width: 1200px; /* Restrict maximum width */
 }
 
 /* Footer Base Styling */
@@ -92,14 +117,14 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%; /* Ensure the footer spans the full width */
-    box-sizing: border-box;
+    box-sizing: border-box; /* Include padding in the width */
 }
 
 /* Footer Links Container */
 .footer-links {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    justify-content: center; /* Center the links */
+    gap: 10px; /* Add spacing between links */
 }
 
 footer a {
@@ -110,5 +135,5 @@ footer a {
 }
 
 footer a:hover {
-    color: black;
+    color: black; /* Change color on hover */
 }
