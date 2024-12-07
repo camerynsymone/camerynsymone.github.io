@@ -12,3 +12,9 @@ document.querySelectorAll('a').forEach(link => {
         link.style.textDecoration = 'none'; // Removes the underline
     });
 });
+
+document.querySelectorAll('a').ForEach(link => {
+    link.addEventListener('click', () => {
+        link.style.backgroundColor = "yellow';
+    });
+});
