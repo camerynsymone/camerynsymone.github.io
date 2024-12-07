@@ -97,12 +97,6 @@ main img {
 	box-sizing: border-box; /* Include padding/borders in size calculations */
 }
 
-/* Constrain Main Container */
-main {
-	max-width: 800px; /* Limit the width of the main container */
-	margin: 0 auto; /* Center the main content horizontally */
-}
-
 main p,
 main section {
     text-align: left; /* Align text to the left */
