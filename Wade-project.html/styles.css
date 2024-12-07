@@ -3,10 +3,11 @@
 	background-color: whitesmoke;
 }
 
-/* Header Title */
-.external-h1 {
+/* Shared Header Title */
+.title {
 	text-align: center;
-	color: whitesmoke;
+	font-size: 45px;
+	color: black;
 }
 
 /* Navigation Table */
@@ -24,90 +25,58 @@
 
 /* Navigation Links */
 .external-nav-a {
-	color:	beige;
+	color: beige;
 	font-size: 20px;
-}
-
-/* About Us Page Specific Styles */
-.aboutus-title {
-    text-align: center;
-    font-size: 40px;
-    color: darkred;
-    background-color: lightgrey;
-}
-
-.aboutus-h2 {
-    text-align: center;
-    font-size: 30px;
-    color: darkred;
-    text-decoration: underline;
-}
-
-.aboutus-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40%;
+	text-decoration: none; /* Remove underline by default */
 }
 
 /* Navigation Links Hover Effect */
 .external-nav-a:hover {
-    	color: black; /* Darken the text color on hover */
+    color: black; /* Change text color on hover */
+    text-decoration: underline; /* Add underline on hover */
 }
 
-/* Header Title */
-.title	{
-	text-align: center;
-	font-size: 45px;
-	color:	black;
-}
-
-/* Center Images */
-.center	{
+/* Shared Images */
+.center {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
 }
 
-/* Style for the h2 element on the homepage */
-#embedded-h2-homepage {
-    text-align: center;
-    font-size: 38px;
-    color: darkred;
-    text-decoration: underline;
-}
-
-/* Style for the h3 element */
+/* Shared Section Titles (H2 and H3) */
+#embedded-h2-homepage,
 #embedded-h3 {
-    text-align: center;
-    font-size: 38px;
-    color: darkred;
-    text-decoration: underline;
+	text-align: center;
+	font-size: 38px;
+	color: darkred;
+	text-decoration: underline;
 }
 
-/* Footer Base Styling /*
+/* Footer Base Styling */
 footer {
-    padding: 10px;
-    text-align: center;
-    width: 100%; /* Ensure the footer spans the entire width */
-    box-sizing: border-box; /* Include padding in the width */
+	padding: 10px;
+	text-align: center;
+	width: 100%; /* Ensure the footer spans the full width */
+	box-sizing: border-box; /* Include padding in the width */
 }
+
 /* Footer Links Container */
 .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* Adds spacing between links */
+	display: flex;
+	justify-content: center; /* Center the links */
+	gap: 10px; /* Add spacing between links */
 }
 
 /* Footer Links */
 footer a {
-    margin: 0;
-    text-decoration: none;
-    font-weight: bold;
+	margin: 0;
+	text-decoration: none;
+	font-weight: bold;
+	color: darkred;
 }
 
 /* Footer Links Hover Effect */
 footer a:hover {
-    color: black; /* Change color on hover */
+	color: black; /* Change color on hover */
 }
