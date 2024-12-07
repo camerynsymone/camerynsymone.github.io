@@ -1,14 +1,7 @@
-/* Reset Default Browser Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* Include padding and borders in width/height calculations */
-}
-
 /* Body styling */
 .external-style-body {
     background-color: whitesmoke;
-    font-family: Arial, sans-serif; /* Default font */
+    font-family: Arial, sans-serif; /* Set a default font */
 }
 
 /* Shared Header Title */
@@ -25,20 +18,18 @@
     border-collapse: collapse;
     width: 100%; /* Make the navigation span the full width */
     background-color: darkred;
-    text-align: center; /* Center-align the text */
 }
 
 .external-nav-td {
     padding: 10px; /* Add spacing inside each cell */
     text-align: center; /* Center-align text in navigation items */
-    vertical-align: middle;
 }
 
 .external-nav-a {
     color: beige;
     font-size: 20px;
     text-decoration: none; /* Remove underline */
-    display: inline-block; /* Allow padding and clickable areas */
+    display: inline-block; /* Allow padding to create a larger clickable area */
     padding: 5px 10px; /* Add clickable padding */
 }
 
@@ -60,17 +51,17 @@
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
     padding: 15px 0; /* Add vertical spacing */
-    margin: 0; /* Remove default margin */
+    margin: 0 auto; /* Center the title block */
     width: 100%; /* Make the grey background span the full width */
-    position: relative; /* Prevent positioning issues */
-    left: 0; /* Align to the left edge of the viewport */
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
 main {
     max-width: 1200px; /* Allow main content to spread wider */
     margin: 0 auto; /* Center the main content horizontally */
-    padding: 0 20px; /* Add padding for readability */
+    padding: 20px; /* Add padding for readability */
+    text-align: left; /* Ensure all main content text is left-aligned */
 }
 
 /* Paragraph Styling */
