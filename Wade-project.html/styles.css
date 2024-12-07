@@ -51,9 +51,11 @@
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
     padding: 15px 0; /* Add vertical spacing */
-    margin: 0 auto; /* Center the title block */
-    width: 100%; /* Make the grey background span the full width */
-    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin: 0; /* Remove any margin */
+    width: 100vw; /* Make the grey background span the full viewport width */
+    position: relative; /* Prevent positioning issues */
+    left: 0; /* Align to the left edge of the viewport */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
