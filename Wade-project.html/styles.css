@@ -1,7 +1,7 @@
 /* Body Styling */
 .external-style-body {
     background-color: whitesmoke; /* Light grey background */
-    font-family: 'Georgia', serif; /* Classic font for readability */
+    font-family: 'Georgia', serif;
     overflow-x: hidden; /* Prevent side scrolling */
     line-height: 1.6; /* Add space between lines */
     color: #333; /* Dark grey text for contrast */
@@ -10,10 +10,10 @@
 /* Main Title */
 .title {
     text-align: center; /* Center the text */
-    font-size: 50px; /* Large font for emphasis */
+    font-size: 50px; 
     font-family: 'Merriweather', serif; /* Formal title font */
     font-weight: bold;
-    color: #00274d; /* Dark blue for a professional look */
+    color: #00274d; /* Dark blue */
     margin: 20px 0; /* Add space above and below */
 }
 
@@ -33,15 +33,10 @@
 .external-nav-a {
     color: white; /* White text */
     font-size: 20px;
-    font-family: 'Arial', sans-serif; /* Clean font for navigation links */
+    font-family: 'Arial', sans-serif;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase; /* All caps for formality */
-}
-
-.external-nav-a:hover {
-    color: #ffcc00; /* Gold text on hover */
-    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Section Titles */
@@ -77,9 +72,9 @@ main p, main ul, main li {
     text-align: left; /* Align text and lists to the left */
     margin: 20px auto; /* Center the block horizontally */
     width: 90%; /* Allow wider text blocks */
-    max-width: 1200px; /* Limit width for readability */
+    max-width: 1200px; /* Limit width */
     font-family: 'Georgia', serif; /* Serif font for professional look */
-    font-size: 18px; /* Standard size for readability */
+    font-size: 18px; /* Standard size for reading */
     color: #333; /* Dark grey text */
 }
 
@@ -122,8 +117,4 @@ footer a {
     font-weight: bold; /* Bold text */
     color: white; /* White text */
     font-size: 16px;
-}
-
-footer a:hover {
-    color: #ffcc00; /* Gold hover */
 }
