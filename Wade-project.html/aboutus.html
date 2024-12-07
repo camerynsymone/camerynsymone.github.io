@@ -1,71 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<style>
-		#embedded-h2-aboutus {
-			text-align: center;
-			font-size: 30px;
-			color: darkred;
-			text-decoration: underline;
-		}
-		#embedded-title		{
-			text-align: center;
-			font-size: 40px;
-			color: darkred;
-			background-color: lightgrey;
-		}
-		#external-nav-table	{
-			margin: 0 auto;
-			border-collapse: collapse;
-			width: 100%;
-			background-color: lightgrey;
-		}
-		#image	{
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			width: 40%;
-		}
-	</style>
-	<meta charset="UTF-8">
-	<title>About Us</title>
-	<meta name="author" content="Cameryn Wade">
+    <meta charset="UTF-8">
+    <meta name="author" content="Cameryn Wade">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="external-style-body">
 
-	<header>
-		<h1 id="embedded-title">About Us</h1>
-			<table id="external-nav-table">
-				<tr>
-					<td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
-					<td class="external-nav-td"><a href="aboutus.html">About Us</a></td>
-					<td class="external-nav-td"><a href="candidates.html" class="external-nav-a">Candidates</a></td>
-					<td class="external-nav-td"><a href="contact.html" class="external-nav-a">Contact</a></td>
-					<td class="external-nav-td"><a href="register.html" class="external-nav-a">Register</a></td>
-				</tr>
-			</table>
-	</header>
-	<main>
-		<section>
-			<h1 id="embedded-h2-aboutus">Purpose Statement </h1>
-			<p>This website is dedicated to encouraging and assisting voter's living primarily in the Eastern Arkansas Region, within the Saint Francis County area to Cross County area. Here, you can find more information regarding the candidates, how to register to vote as well as where you can vote. Feel free to click on the links above so we can help you with your specified needs!</p>
-			<p> We hope to be able to assist you with the most current and up to date information regarding the 2024 Presidential Election! Feel free to use our Contact page to be able to call or email your local offices directly for more information.</p>
-		</section>
-		<section>
-			<h2 id="embedded-h2-aboutus">Meet the Author</h2>
-			<p>This page was curated by Cameryn Wade, an Information Technology student at North Carolina A&T University as a project for class.</p>
-		</section>
-		<img src="images/aboutus.jpg" alt="NCAT logo" id="image">
-		<section>
-			<h2 id="embedded-h2-aboutus">Messasge From the Author</h2>
-			<p>Thank you for visiting my website. I hope I was able to cover all needs pertaining to voting within the Cross and St. Francis counties! Go Aggies!</p>
-		</section>
-	</main>
-	<footer>
-		<a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url"> Validate HTML </a> 
-		<br>
-		<a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url"> Validate CSS </a>
-	</footer>
+    <header>
+        <h1 class="aboutus-title">About Us</h1>
+        <table class="external-nav-table">
+            <tr>
+                <td class="external-nav-td"><a href="index.html" class="external-nav-a">Home</a></td>
+                <td class="external-nav-td"><a href="aboutus.html" class="external-nav-a">About Us</a></td>
+                <td class="external-nav-td"><a href="candidates.html" class="external-nav-a">Candidates</a></td>
+                <td class="external-nav-td"><a href="contact.html" class="external-nav-a">Contact</a></td>
+                <td class="external-nav-td"><a href="register.html" class="external-nav-a">Register</a></td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <section>
+            <h2 class="aboutus-h2">Purpose Statement</h2>
+            <p>This website is dedicated to encouraging and assisting voters living primarily in the Eastern Arkansas Region...</p>
+        </section>
+        <section>
+            <h2 class="aboutus-h2">Meet the Author</h2>
+            <p>This page was curated by Cameryn Wade, an Information Technology student at North Carolina A&T University...</p>
+        </section>
+        <img src="images/aboutus.jpg" alt="NCAT logo" class="aboutus-image">
+        <section>
+            <h2 class="aboutus-h2">Message From the Author</h2>
+            <p>Thank you for visiting my website. I hope I was able to cover all needs pertaining to voting...</p>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="https://validator.w3.org/check?uri=referer" referrerpolicy="unsafe-url">Validate HTML</a>
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" referrerpolicy="unsafe-url">Validate CSS</a>
+        </div>
+    </footer>
 </body>
 </html>
-
