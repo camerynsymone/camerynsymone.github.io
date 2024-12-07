@@ -13,7 +13,7 @@
     background-color: whitesmoke; /* Light grey background */
     font-family: 'Georgia', serif; /* Classic font for readability */
     overflow-x: hidden; /* Prevent side scrolling */
-    line-height: 1.6; /* Add space between lines */
+    line-height: 1.4; /* Add space between lines */
     color: #333; /* Dark grey text for contrast */
 }
 
@@ -62,7 +62,7 @@
 #embedded-h2-contact,
 #embedded-h1-register {
     text-align: center; /* Center the text */
-    font-size: 32px; /* Large text for visibility */
+    font-size: 28px; /* Large text for visibility */
     font-family: 'Merriweather', serif; /* Same font as title for consistency */
     font-weight: bold;
     color: #00274d; /* Dark blue text */
