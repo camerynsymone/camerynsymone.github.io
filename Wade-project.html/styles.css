@@ -1,113 +1,126 @@
-/* Body Styling */
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/* Body */
 .external-style-body {
     background-color: whitesmoke;
-    font-family: Arial, sans-serif;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: 'Georgia', serif; /* Serif font for a formal look */
+    color: #333; /* Dark grey for text */
+    line-height: 1.8; /* Space between lines */
+    overflow-x: hidden; /* No horizontal scrolling */
 }
 
-/* Shared Header Title */
+/* Main Title */
 .title {
     text-align: center;
-    font-size: 45px;
-    color: black;
+    font-size: 50px;
+    font-family: 'Merriweather', serif; /* Professional font */
+    font-weight: bold;
+    color: #00274d; /* Navy blue */
     margin: 20px 0;
 }
 
 /* Navigation Bar */
 .external-nav-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    width: 100%;
+    margin: 0 auto; /* Center the nav bar */
+    width: 100%; /* Full width */
     background-color: darkred;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
 .external-nav-td {
-    padding: 10px;
-    text-align: center;
+    padding: 15px;
+    text-align: center; /* Center links */
 }
 
 .external-nav-a {
-    color: beige;
+    color: white; /* White text */
     font-size: 20px;
-    text-decoration: none;
+    text-decoration: none; /* No underline */
+    font-weight: bold;
+    text-transform: uppercase; /* All caps */
 }
 
 .external-nav-a:hover {
-    color: black; /* Change text color on hover */
-    text-decoration: underline; /* Add underline on hover */
+    color: #ffcc00; /* Gold on hover */
+    text-decoration: underline;
 }
 
-/* Section Titles with Full-Screen Grey Background */
+/* Section Headings */
 #embedded-h2-homepage,
 #embedded-h3,
 #titleline,
 #titleline2,
 #embedded-h2-contact,
 #embedded-h1-register {
-    text-align: center;
-    font-size: 38px;
-    color: darkred;
-    text-decoration: underline;
-    background-color: lightgrey;
-    padding: 15px 0;
+    text-align: center; /* Center text */
+    font-size: 42px;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    color: #00274d;
+    background-color: lightgrey; /* Grey background */
+    padding: 20px 0;
     margin: 0;
-    width: 100vw; /* Ensure the grey spans the full viewport width */
+    width: 100vw; /* Full screen width */
     position: relative;
     left: 50%;
-    transform: translateX(-50%); /* Center the element horizontally */
+    transform: translateX(-50%); /* Center the background */
 }
 
-/* Main Content Layout */
+/* Main Content */
 main, section {
-    max-width: 1200px;
-    margin: 0 auto; /* Center the main content horizontally */
+    max-width: 1200px; /* Limit content width */
+    margin: 0 auto; /* Center content */
     padding: 20px;
 }
 
-/* Paragraph Styling */
+/* Paragraphs and Lists */
 main p, main ul, main li {
-    text-align: left; /* Align text and lists to the left */
-    margin: 20px auto; /* Center the block horizontally */
-    width: 90%; /* Set width relative to the viewport */
-    max-width: 1200px; /* Limit the maximum width for readability */
-    line-height: 1.8;
+    text-align: left; /* Align text left */
+    margin: 20px auto; /* Center block */
+    width: 90%; /* Spread text wider */
+    max-width: 1200px; /* Keep text readable */
+    font-size: 18px;
+    color: #333; /* Dark grey */
 }
 
-/* Global Image Styling */
+/* Images */
 img {
-    display: block;
-    margin: 20px auto; /* Center all images */
-    max-width: 100%; /* Prevent images from exceeding their container */
-    height: auto; /* Maintain aspect ratio */
+    display: block; /* Treat as block element */
+    margin: 20px auto; /* Center images */
+    max-width: 100%; /* Fit container */
+    height: auto; /* Keep aspect ratio */
 }
 
-/* Restrict Images Specifically in <main> */
+/* Limit Images in <main> */
 main img {
-    max-width: 300px; /* Constrain maximum width */
-    max-height: 300px; /* Constrain maximum height */
-    object-fit: contain; /* Ensure images fit within constraints */
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain; /* Fit within size */
 }
 
 /* Footer */
 footer {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     width: 100%;
-    background-color: lightgrey;
+    background-color: #004080; /* Deep blue */
+    color: white;
+    font-size: 16px;
 }
 
 .footer-links {
     display: flex;
-    justify-content: center;
-    gap: 10px; /* Add spacing between links */
+    justify-content: center; /* Center links */
+    gap: 15px; /* Space between links */
 }
 
 footer a {
-    text-decoration: none;
+    text-decoration: none; /* No underline */
     font-weight: bold;
-    color: darkred;
+    color: white;
 }
 
 footer a:hover {
-    color: black;
+    color: #ffcc00; /* Gold on hover */
 }
