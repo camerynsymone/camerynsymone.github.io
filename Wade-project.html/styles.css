@@ -1,6 +1,10 @@
-/* Body styling */
-.external-style-body {
-    background-color: whitesmoke;
+/* Reset Default Styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element dimensions */
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+    background-color: whitesmoke; /* Background for the entire page */
     font-family: Arial, sans-serif; /* Set a default font */
 }
 
@@ -51,19 +55,17 @@
     text-decoration: underline; /* Underline the text */
     background-color: lightgrey; /* Set the grey background */
     padding: 15px 0; /* Add vertical spacing */
-    margin: 0; /* Remove any margin */
-    width: 100vw; /* Make the grey background span the full viewport width */
-    position: relative; /* Prevent positioning issues */
-    left: 0; /* Align to the left edge of the viewport */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure the element spans the full container width */
     box-sizing: border-box; /* Include padding in the element's width */
 }
 
 /* Ensure Parent Containers Don’t Restrict Width */
-main {
-    max-width: 1200px; /* Allow main content to spread wider */
-    margin: 0 auto; /* Center the main content horizontally */
-    padding: 20px; /* Add padding for readability */
-    text-align: left; /* Ensure all main content text is left-aligned */
+main, section {
+    width: 100%; /* Ensure parent containers span the full width */
+    max-width: none; /* Prevent any maximum width restrictions */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
 }
 
 /* Paragraph Styling */
