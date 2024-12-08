@@ -18,3 +18,7 @@ document.querySelectorAll('a').forEach(link => {
         link.style.backgroundColor = 'orange';
     });
 });
+
+$(function() {
+    $("b").tooltip();
+});
