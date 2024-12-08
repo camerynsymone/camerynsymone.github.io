@@ -15,6 +15,6 @@ document.querySelectorAll('a').forEach(link => {
 
 document.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-        link.style.backgroundColor = 'red';
+        link.style.backgroundColor = 'orange';
     });
 });
