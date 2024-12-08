@@ -20,5 +20,5 @@ document.querySelectorAll('a').forEach(link => {
 });
 
 $(function() {
-    $("b").tooltip();
+    $("a").tooltip();
 });
