@@ -48,3 +48,12 @@ $(document).ready(function () {
         $(this).hide().fadeIn(2000); // Fade in effect
     });
 });
+
+// Trigger Reflow of CSS Styles of Navbar
+$(document).ready(function () {
+    $('#navbar-container').load('navbar.html', function () {
+        $(this).hide().fadeIn(2000); 
+        // Reapply specific styles or classes
+        $(this).find('table').addClass('external-nav-table');
+    });
+});
