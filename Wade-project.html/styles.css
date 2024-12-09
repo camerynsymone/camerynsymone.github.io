@@ -18,6 +18,13 @@
 }
 
 /* Navigation Bar Sytles /*
+
+#navbar-container {
+    width: 100%; /* Match the width of the navbar */
+    background-color: #004080; /* Ensure it shares the same background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for consistency */
+}
+
 #navbar-container table.external-nav-table {
     width: 100%; /* Full width */
     background-color: #004080; /* Deep blue background */
