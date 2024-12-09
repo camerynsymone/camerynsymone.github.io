@@ -17,26 +17,25 @@
     margin: 20px 0; /* Add space above and below */
 }
 
-/* Navigation Bar */
-.external-nav-table {
-    margin: 0 auto; /* Center the navigation bar */
+/* Navigation Bar Sytles /*
+#navbar-container table.external-nav-table {
     width: 100%; /* Full width */
     background-color: #004080; /* Deep blue background */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
-.external-nav-td {
-    padding: 15px; /* Add space around text */
-    text-align: center; /* Center-align the links */
+#navbar-container td.external-nav-td {
+    padding: 15px;
+    text-align: center;
 }
 
-.external-nav-a {
-    color: white; /* White text */
+#navbar-container a.external-nav-a {
+    color: white;
     font-size: 20px;
     font-family: 'Arial', sans-serif;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* All caps for formality */
+    text-transform: uppercase;
 }
 
 /* Section Titles */
