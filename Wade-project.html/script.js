@@ -41,3 +41,10 @@ $(function() {
         fjs.parentNode.insertBefore(js, fjs);
     }
 })(document, 'script', 'weatherwidget-io-js');
+
+// Use AJAX to Dynamically Load Navigation Bar
+$(document).ready(function () {
+    $('#navbar-container').load('navbar.html', function () {
+        $(this).hide().fadeIn(2000); // Fade in effect
+    });
+});
