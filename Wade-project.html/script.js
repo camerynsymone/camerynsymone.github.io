@@ -43,13 +43,6 @@ $(function() {
 })(document, 'script', 'weatherwidget-io-js');
 
 // Use AJAX to Dynamically Load Navigation Bar
-$(document).ready(function () {
-    $('#navbar-container').load('navbar.html', function () {
-        $(this).hide().fadeIn(2000); // Fade in effect
-    });
-});
-
-        // Reapply Styles
-        $(this).find('table').addClass('external-nav-table');
-    });
+$('#navbar-container').load('navbar.html', function () {
+    $(this).css('visibility', 'visible').css('opacity', 1); // Fade in after load
 });
