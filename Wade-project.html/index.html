@@ -6,6 +6,10 @@
 	<meta name="author" content="Cameryn Wade">
 	<!-- Link to External CSS -->
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<!-- jQuery and jQuery-UI -->
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 </head>
 <body class="external-style-body">
 	<!-- Header Section with Navigation Tabs -->
@@ -28,12 +32,18 @@
 	
     	<!-- Main Content Section -->
 	<main>
-		<!-- inserting weather widget-->
-		<a class="weatherwidget-io" href="https://forecast7.com/en/35d20n91d83/arkansas/" data-label_1="EASTERN ARKANSAS" data-label_2="WEATHER" data-font="Times New Roman" data-days="5" data-theme="dark" data-basecolor="rgba(12, 8, 77, 0.84)" >EASTERN ARKANSAS WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
+		<!-- Accordion for Weather Widget -->
+		<div id="weather-widget-container">
+    			<h2>Weather Information</h2>
+		    	<div>
+        			<a class="weatherwidget-io" href="https://forecast7.com/en/35d20n91d83/arkansas/" 
+          				data-label_1="EASTERN ARKANSAS" data-label_2="WEATHER" 
+           				data-font="Times New Roman" data-days="5" data-theme="dark" 
+           				data-basecolor="rgba(12, 8, 77, 0.84)">EASTERN ARKANSAS WEATHER</a>
+   			</div>
+		</div>
 		<!--End of weather widget for homepage-->
+
 		<!-- Image for Voting -->
 		<img src="images/mainvoteimage.jpg" alt="Voting" class="center">
 		<section>
